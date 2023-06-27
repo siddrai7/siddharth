@@ -1,10 +1,12 @@
-
-import './App.css';
+import "./App.scss";
+import Header from "./components/Header/Header";
+import Hero from "./components/Hero/Hero";
 
 function App() {
   return (
     <div className="App">
-      <h1>Siddharth's new website coming here soon.</h1>
+      <Header />
+      <Hero />
     </div>
   );
 }

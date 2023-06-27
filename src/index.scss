@@ -1,0 +1,83 @@
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-weight: 400;
+}
+
+///////////////////////////////////
+/// Variables
+
+$white: white;
+$light-white: #c6c6c6;
+$grey: #8f8f8f;
+$light-black: #727272;
+$black: #000000;
+
+$primary-blue: #0084ba;
+$primary-green: #408364;
+
+//////////////////////////////////////////////
+//Media Queries
+
+// Break points -
+// 400px
+// 900px
+// 1200px
+
+/*
+phone
+tablet
+tablet landscape
+desktop
+*/
+
+@mixin respond($breakpoint) {
+  @if ($breakpoint == tablet) {
+    @media (max-width: 900px) {
+      @content;
+    }
+  }
+  @if ($breakpoint == phone) {
+    @media (max-width: 430px) {
+      @content;
+    }
+  }
+}
+
+@mixin Vibes {
+  font-family: "Great Vibes", cursive;
+}
+@mixin Montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+@mixin Playfair {
+  font-family: "Playfair Display", serif;
+}
+@mixin Poppins {
+  font-family: "Poppins", sans-serif;
+}
+@mixin Zilla {
+  font-family: "Zilla Slab", serif;
+}
+@mixin Vibes {
+  font-family: "Great Vibes", cursive;
+}
+
+///////////////////////////////////
+/// Debugger
+
+// * {
+//   background: #000 !important;
+//   color: #0f0 !important;
+//   outline: solid #f00 1px !important;
+// }

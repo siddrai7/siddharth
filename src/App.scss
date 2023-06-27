@@ -1,0 +1,9 @@
+@import "./index.scss";
+
+.App {
+  margin: 2rem 10rem;
+
+  @include respond(phone) {
+    margin: 1rem 1.5rem;
+  }
+}
