@@ -1,0 +1,20 @@
+@import "../../index.scss";
+
+.button {
+  padding: 1rem 3rem;
+  border: none;
+  //   border-radius: 0.5rem;
+  font-size: 1.6rem;
+  @include Zilla;
+}
+
+.primary-button {
+  background-color: $primary-green;
+  color: white;
+}
+
+.secondary-arrow-button {
+  background-color: white;
+  color: $primary-blue;
+  border: 1px solid $primary-blue;
+}

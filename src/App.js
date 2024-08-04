@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect, useState } from "react";
+import "./App.scss";
+import Header from "./components/Header/Header";
+import Hero from "./components/Hero/Hero";
+import NameAnimation from "./components/NameAnimation/NameAnimation";
 
 function App() {
+  const [showAnimation, setShowAnimation] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setShowAnimation(false);
+    }, 6500);
+  }, []);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to relo.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {showAnimation ? <NameAnimation /> : ""}
+      <Header />
+      <Hero />
     </div>
   );
 }

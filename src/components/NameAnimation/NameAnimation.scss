@@ -1,0 +1,202 @@
+@import "../../index.scss";
+
+.nameAnimation {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: white;
+  z-index: 100;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-large {
+    display: block;
+
+    @include respond(phone) {
+      display: none;
+    }
+  }
+
+  &-phone {
+    display: none;
+    @include respond(phone) {
+      display: block;
+    }
+  }
+}
+
+// .animatesvg {
+//   animation: whiten 0.5s ease forwards 4.3s;
+// }
+
+.nameAnimation-large path:nth-child(2) {
+  stroke-dasharray: 380;
+  stroke-dashoffset: 380;
+  animation: animate 2s ease-out forwards 1s;
+}
+.nameAnimation-large path:nth-child(3) {
+  stroke-linecap: square;
+  stroke-dasharray: 175px;
+  stroke-dashoffset: 175px;
+  animation: animate 2s ease forwards 1.3s;
+}
+.nameAnimation-large path:nth-child(4) {
+  stroke-dasharray: 440px;
+  stroke-dashoffset: 440px;
+  animation: animate 2s ease forwards 1.6s;
+}
+.nameAnimation-large path:nth-child(5) {
+  stroke-dasharray: 440px;
+  stroke-dashoffset: 440px;
+  animation: animate 2s ease forwards 1.9s;
+}
+.nameAnimation-large path:nth-child(6) {
+  stroke-linecap: square;
+  stroke-dasharray: 413px;
+  stroke-dashoffset: 413px;
+  animation: animate 2s ease forwards 2.2s;
+}
+.nameAnimation-large path:nth-child(7) {
+  stroke-dasharray: 378px;
+  stroke-dashoffset: 378px;
+  animation: animate 2s ease forwards 2.5s;
+}
+.nameAnimation-large path:nth-child(8) {
+  stroke-linecap: round;
+
+  stroke-dasharray: 423px;
+  stroke-dashoffset: 423px;
+  animation: animate 2s ease forwards 2.8s;
+}
+.nameAnimation-large path:nth-child(9) {
+  stroke-linecap: square;
+
+  stroke-dasharray: 260px;
+  stroke-dashoffset: 260px;
+  animation: animate 2s ease forwards 3.1s;
+}
+.nameAnimation-large path:nth-child(10) {
+  stroke-linecap: square;
+
+  stroke-dasharray: 413;
+  stroke-dashoffset: 413;
+  animation: animate 2s ease forwards 3.4s;
+}
+.nameAnimation-large path:nth-child(11) {
+  stroke-linecap: round;
+
+  stroke-dasharray: 423px;
+  stroke-dashoffset: 423px;
+  animation: animate 2s ease forwards 3.7s;
+}
+.nameAnimation-large path:nth-child(12) {
+  stroke-dasharray: 377px;
+  stroke-dashoffset: 377px;
+  animation: animate 2s ease forwards 4s;
+}
+.nameAnimation-large path:nth-child(13) {
+  stroke-linecap: square;
+  stroke-dasharray: 175px;
+  stroke-dashoffset: 175px;
+  animation: animate 2s ease forwards 4.3s;
+}
+
+@keyframes animate {
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+@keyframes whiten {
+  from {
+    fill: none;
+  }
+  to {
+    fill: white;
+  }
+}
+
+.nameAnimation-phone path:nth-child(2) {
+  stroke-linecap: square;
+  stroke-dasharray: 244.47px;
+  stroke-dashoffset: 244.47px;
+  animation: animate 2s ease-out forwards 1s;
+}
+.nameAnimation-phone path:nth-child(3) {
+  stroke-linecap: square;
+  stroke-dasharray: 106.21px;
+  stroke-dashoffset: 106.21px;
+  animation: animate 2s ease forwards 1.3s;
+}
+.nameAnimation-phone path:nth-child(4) {
+  stroke-linecap: square;
+  stroke-dasharray: 440px;
+  stroke-dashoffset: 440px;
+  animation: animate 2s ease forwards 1.6s;
+}
+.nameAnimation-phone path:nth-child(5) {
+  stroke-linecap: square;
+  stroke-dasharray: 440px;
+  stroke-dashoffset: 440px;
+  animation: animate 2s ease forwards 1.9s;
+}
+.nameAnimation-phone path:nth-child(6) {
+  stroke-linecap: square;
+  stroke-dasharray: 413px;
+  stroke-dashoffset: 413px;
+  animation: animate 2s ease forwards 2.2s;
+}
+.nameAnimation-phone path:nth-child(7) {
+  stroke-dasharray: 378px;
+  stroke-dashoffset: 378px;
+  animation: animate 2s ease forwards 2.5s;
+}
+.nameAnimation-phone path:nth-child(8) {
+  stroke-linecap: round;
+
+  stroke-dasharray: 423px;
+  stroke-dashoffset: 423px;
+  animation: animate 2s ease forwards 2.8s;
+}
+.nameAnimation-phone path:nth-child(9) {
+  stroke-linecap: square;
+
+  stroke-dasharray: 260px;
+  stroke-dashoffset: 260px;
+  animation: animate 2s ease forwards 3.1s;
+}
+.nameAnimation-phone path:nth-child(10) {
+  stroke-linecap: square;
+
+  stroke-dasharray: 413;
+  stroke-dashoffset: 413;
+  animation: animate 2s ease forwards 3.4s;
+}
+.nameAnimation-phone path:nth-child(11) {
+  stroke-linecap: round;
+
+  stroke-dasharray: 423px;
+  stroke-dashoffset: 423px;
+  animation: animate 2s ease forwards 3.7s;
+}
+.nameAnimation-phone path:nth-child(12) {
+  stroke-dasharray: 377px;
+  stroke-dashoffset: 377px;
+  animation: animate 2s ease forwards 4s;
+}
+.nameAnimation-phone path:nth-child(13) {
+  stroke-linecap: square;
+  stroke-dasharray: 175px;
+  stroke-dashoffset: 175px;
+  animation: animate 2s ease forwards 4.3s;
+}
+
+@keyframes animate {
+  to {
+    stroke-dashoffset: 0px;
+  }
+}

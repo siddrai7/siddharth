@@ -1,0 +1,13 @@
+@import "../../index.scss";
+
+header {
+  display: flex;
+  //text-align: center;
+  justify-content: space-between;
+  align-items: center;
+
+  & .logo {
+    height: 13vh;
+    width: auto;
+  }
+}
