@@ -1,0 +1,29 @@
+@import "../../../src/index.scss";
+
+.whatSection {
+  // background-color: $secondary-green;
+  background: linear-gradient(
+    90deg,
+    #07233b 1.67%,
+    #041d34 39.95%,
+    #04192d 58.24%,
+    #040e18 80.28%,
+    #050c16 101.48%
+  );
+  padding: 2rem 10rem;
+  padding-bottom: 8rem;
+
+  @include respond(phone) {
+    padding: 1rem 1.5rem;
+  }
+
+  &-content {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 1.5rem 1.5rem 0;
+  }
+}

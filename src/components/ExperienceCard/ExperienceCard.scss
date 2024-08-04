@@ -1,0 +1,47 @@
+@import "../../index.scss";
+
+.experienceCard {
+  &-content {
+    margin: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    text-align: center;
+
+    @include respond(phone) {
+      width: 100%;
+      flex-direction: column;
+    }
+
+    &-title {
+      width: 40%;
+      font-size: 4.5rem;
+      color: $primary-green;
+
+      @include respond(phone) {
+        font-size: 3.5rem;
+        margin-bottom: 1.5rem;
+        width: 100%;
+      }
+    }
+
+    &-description {
+      width: 50%;
+      font-size: 2rem;
+      // color: $secondary-black;
+      color: rgb(138, 138, 138);
+
+      @include respond(phone) {
+        font-size: 2.6rem;
+        width: 100%;
+      }
+    }
+  }
+  &-line {
+    border: 0.1rem solid $secondary-black;
+    border-radius: 50%;
+    width: 100%;
+    z-index: 100;
+  }
+}

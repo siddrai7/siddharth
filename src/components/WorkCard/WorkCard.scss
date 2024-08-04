@@ -1,0 +1,59 @@
+@import "../../index.scss";
+
+.workCard {
+  background-color: $white;
+  width: 30%;
+  height: auto;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 18px 18px 0 0 $primary-green;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  @include Montserrat;
+
+  @include respond(phone) {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 2.5rem;
+  }
+
+  &-title {
+    color: $primary-green;
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+
+    @include respond(phone) {
+      // font-size: 3.2rem;
+    }
+  }
+
+  &-description {
+    color: $secondary-black;
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 1rem;
+
+    @include respond(phone) {
+      // font-size: 1.4rem;
+    }
+  }
+
+  &-image {
+    width: auto;
+    height: 27rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    overflow: hidden;
+
+    & > * {
+      width: auto;
+      max-width: 70%;
+      height: 100%;
+    }
+  }
+}

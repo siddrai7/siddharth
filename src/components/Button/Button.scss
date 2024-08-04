@@ -6,6 +6,7 @@
   //   border-radius: 0.5rem;
   font-size: 1.6rem;
   @include Zilla;
+  cursor: pointer;
 }
 
 .primary-button {
@@ -17,4 +18,11 @@
   background-color: white;
   color: $primary-blue;
   border: 1px solid $primary-blue;
+}
+
+.tablet-button {
+  color: white;
+  font-weight: 400;
+  background-color: #408364;
+  border-radius: 2.2rem;
 }

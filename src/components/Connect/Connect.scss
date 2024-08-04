@@ -1,0 +1,66 @@
+@import "../../index.scss";
+
+.connect {
+  padding: 2rem 10rem;
+  background: linear-gradient(
+    90deg,
+    #07233b 1.67%,
+    #041d34 39.95%,
+    #04192d 58.24%,
+    #040e18 80.28%,
+    #050c16 101.48%
+  );
+  display: flex;
+  flex-direction: column;
+  @include Poppins;
+
+  @include respond(phone) {
+    padding: 5rem 1.5rem;
+  }
+
+  &-want {
+    color: rgb(196, 196, 196);
+    font-size: 5.4rem;
+    font-weight: 700;
+    @include Poppins;
+
+    @include respond(phone) {
+      font-size: 3rem;
+      text-align: center;
+    }
+  }
+
+  &-title {
+    color: white;
+    font-size: 4.5rem;
+    font-weight: 800;
+    @include Poppins;
+
+    @include respond(phone) {
+      font-size: 2.7rem;
+      margin-top: 1rem;
+    }
+  }
+
+  &-email {
+    margin-top: 4rem;
+    color: rgb(196, 196, 196);
+    font-size: 1.6rem;
+  }
+
+  &-add {
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+  }
+
+  &-socials {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+
+    @include respond(phone) {
+      width: 80%;
+    }
+  }
+}

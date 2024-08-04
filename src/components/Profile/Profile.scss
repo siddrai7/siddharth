@@ -1,0 +1,161 @@
+@import "../../index.scss";
+
+.profile {
+  background: linear-gradient(
+    90deg,
+    #07233b 1.67%,
+    #041d34 39.95%,
+    #04192d 58.24%,
+    #040e18 80.28%,
+    #050c16 101.48%
+  );
+
+  &-contents {
+    &-header {
+    }
+    &-intro {
+    }
+    &-hero {
+    }
+  }
+}
+
+////////////////////////////////
+/// Styles for the Slider.
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  cursor: pointer;
+  z-index: 10;
+  @include Poppins;
+
+  background: linear-gradient(
+    90deg,
+    #07233b 1.67%,
+    #041d34 39.95%,
+    #04192d 58.24%,
+    #040e18 80.28%,
+    #050c16 101.48%
+  );
+
+  &-contents {
+    width: 100%;
+    position: relative;
+    margin: 3rem 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include respond(phone) {
+      margin: 3rem;
+    }
+    &-cross {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+
+      & svg {
+        width: 6rem;
+        height: auto;
+
+        @include respond(tablet) {
+          width: 5rem;
+        }
+        @include respond(phone) {
+          width: 3rem;
+        }
+      }
+    }
+
+    &-name {
+      width: 100%;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 5vw;
+      color: $primary-blue;
+      text-decoration: none;
+      @include Monoton;
+
+      @include respond(phone) {
+        margin-top: 3rem;
+        font-size: 9vw;
+      }
+    }
+
+    &-links {
+      margin: 2rem;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+      &-title {
+        font-size: 3rem;
+        color: rgb(183, 183, 183);
+      }
+
+      &-link {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 5vw;
+        color: white;
+
+        @include respond(phone) {
+          font-size: 9vw;
+          margin: 1.5rem 0;
+        }
+      }
+
+      & a {
+        text-decoration: none;
+      }
+
+      &-link:hover {
+        color: $primary-blue;
+      }
+    }
+    &-email {
+      width: 40%;
+      margin: 0 auto;
+      //   margin-top: 3rem;
+      color: white;
+      font-size: 2rem;
+
+      @include respond(phone) {
+        width: 90%;
+      }
+
+      & a {
+        text-decoration: none;
+        color: white;
+      }
+
+      & a:hover {
+        color: $primary-blue;
+      }
+    }
+
+    &-social {
+      width: 40%;
+      margin: 0 auto;
+
+      @include respond(phone) {
+        width: 90%;
+      }
+
+      &-title {
+        color: white;
+        font-size: 2rem;
+      }
+    }
+
+    &-contact:hover a {
+      color: $primary-blue;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+@import "../../../src/index.scss";
+
+.sectionHeader {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  height: 25vh;
+
+  @include respond(phone) {
+    height: auto;
+    margin: 5rem 0;
+  }
+
+  &-title {
+    color: white;
+    font-size: 6rem;
+    font-weight: 700;
+    transform: translateY(30%);
+
+    @include Montserrat;
+
+    @include respond(phone) {
+      font-size: 4.5rem;
+    }
+  }
+  &-backtitle {
+    text-transform: uppercase;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    color: rgba($color: #ffffff, $alpha: 0.2);
+    font-size: 13rem;
+    font-weight: 700;
+
+    @include Montserrat;
+
+    @include respond(phone) {
+      font-size: 5rem;
+      transform: translate(-50%, -10%);
+    }
+  }
+  & svg {
+    margin-top: 1.5rem;
+
+    @include respond(phone) {
+      margin-top: 0.5rem;
+    }
+  }
+}

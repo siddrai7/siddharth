@@ -1,12 +1,24 @@
 @import "../../index.scss";
 
 .hero {
+  margin: 2rem 10rem;
   display: flex;
   align-items: center;
   margin-top: 1.5rem;
+  @include Poppins;
+  // background: linear-gradient(
+  //   90deg,
+  //   #07233b 1.67%,
+  //   #041d34 39.95%,
+  //   #04192d 58.24%,
+  //   #040e18 80.28%,
+  //   #050c16 101.48%
+  // );
 
   @include respond(phone) {
     flex-direction: column;
+
+    margin: 1rem 1.5rem;
   }
 
   &-left {
@@ -20,14 +32,29 @@
       width: 100%;
       text-align: center;
       padding: 0;
+      margin: 5rem 0;
     }
 
     &-title {
-      @include Playfair;
-      font-size: 30px;
+      // @include Playfair;
+      @include Poppins;
+      font-size: 3rem;
+      color: rgb(184, 184, 184);
 
       @include respond(phone) {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
+      }
+
+      &-name {
+        color: white;
+        display: block;
+        margin: 1.5rem 0;
+        font-size: 6rem;
+        font-weight: 700;
+
+        @include respond(phone) {
+          font-size: 4.5rem;
+        }
       }
     }
 
@@ -35,7 +62,7 @@
       @include Zilla;
       font-size: 2rem;
       margin-top: 2rem;
-      color: $light-black;
+      color: $secondary-black;
 
       @include respond(phone) {
         font-size: 1.3rem;
@@ -62,21 +89,26 @@
     //align-items: center;
 
     @include respond(phone) {
-      margin-top: 1rem;
+      // margin-top: 1rem;
+      // margin: 5rem 0;
+      margin-bottom: 5rem;
       width: 100%;
       flex-direction: column;
     }
     &-image {
+      text-align: center;
       & img {
         margin: 2rem;
         height: 70vh;
         width: auto;
         border-radius: 0.5rem;
         justify-self: center;
+        z-index: 3;
 
         @include respond(phone) {
           margin: 0;
-          width: 100%;
+          width: 90%;
+          margin: 0 auto;
           height: auto;
         }
       }
@@ -95,10 +127,16 @@
       @include respond(phone) {
         position: relative;
         flex-direction: row;
+        width: 60%;
+        justify-content: space-between;
+        display: none;
       }
 
       & a {
-        margin: 0.5rem;
+        background-color: $primary;
+        padding: 0.5rem;
+        border-radius: 50%;
+        margin: 1rem 0;
 
         & > * {
           height: 4rem;

@@ -1,0 +1,47 @@
+{
+  "heroTitle": "Hey! I’mSiddharth Rai. An Engineer, Product Manager, Public Speaker and an Entrepreneur in the making.",
+  "heroSubtitle": "Do you need a website for yourself? Need someone to manage your projects? Need a host for your event? You’re at the right place.",
+  "whatIDo": [
+    {
+      "id": 1,
+      "title": "I Transform",
+      "description": "I help businesses to scale and build their online presence by crafting for them custom software solutions including websites and apps."
+    },
+    {
+      "id": 2,
+      "title": "I Develop",
+      "description": "I am a tech enthusiast. I love tinkering with new tech/coding languages and build something cool out of it."
+    },
+    {
+      "id": 3,
+      "title": "I Speak",
+      "description": "I'm a public speaker and a host. Be it meetings or seminars or events, you may find me speaking to an audiance. In love with the stage and mic."
+    }
+  ],
+  "Experience": [
+    {
+      "id": 1,
+      "title": "Freelancer",
+      "description": "Working as a Freelancer. I design and develop websites and mobile apps for clients. I also host events and shows.",
+      "total": 4
+    },
+    {
+      "id": 2,
+      "title": "Product Manager",
+      "description": "Worked as a Product Manager at Mindstix with cross funtiononal teams to build products that help in digital transformation of various industries.",
+      "total": 4
+    },
+    {
+      "id": 3,
+      "title": "Software Engineer",
+      "description": "I worked as a Software Engineer at Mindstix. Well versed with various technologies used for web development along with UI/UX.",
+      "total": 4
+    },
+    {
+      "id": 4,
+      "title": "Co-CEO",
+      "description": "Worked as the Co-CEO of the organization Sapphire in my University. Managed a team of almost 150 students and organized several events.",
+      "total": 4
+    }
+  ]
+}

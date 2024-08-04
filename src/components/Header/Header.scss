@@ -1,13 +1,53 @@
 @import "../../index.scss";
 
-header {
+.header {
+  margin: 2rem 10rem;
   display: flex;
   //text-align: center;
   justify-content: space-between;
   align-items: center;
+  height: 10vh;
+
+  @include respond(phone) {
+    margin: 1rem 1.5rem;
+  }
 
   & .logo {
-    height: 13vh;
-    width: auto;
+    // height: 10vh;
+    // width: auto;
+    width: 15%;
+    height: auto;
+
+    @include respond(phone) {
+      width: 40%;
+    }
+  }
+
+  &-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+
+    @include respond(phone) {
+      display: none;
+    }
+
+    &-link {
+      @include Poppins;
+      font-size: 1.6rem;
+      color: white;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  }
+
+  &-phone {
+    // display: none;
+    cursor: pointer;
+
+    @include respond(phone) {
+      display: block;
+    }
   }
 }
